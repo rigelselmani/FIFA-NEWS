@@ -34,7 +34,7 @@ app.get("/savedArticles", function (req, res) {
 
 function something() {
     var results = [];
-    axios.get("https://thehimalayantimes.com/category/sports/").then(function (response) {
+    axios.get("https://www.fifa.com/").then(function (response) {
         var $ = cheerio.load(response.data);
 
         $("li").each(function (i, element) {
